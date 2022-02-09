@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Task2_2_3Col.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script>
+        function change(){
+            document.getElementById("changing_img").innerHTML='<model-viewer src=/scene.gltf auto-rotate camera-controls arios-src=/scene.gltf>';
+        }
+        function change1(){
+            document.getElementById("changing_img").innerHTML='<img src=/img2.jpg width=800px height=600px>';
+        }
+        function change2(){
+            document.getElementById("changing_img").innerHTML='<embed src=/abb.pdf type="application/pdf" width=800px height=600px />';
+        }
+    </script>
+    <title>ABB YuMi</title>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#3d" onclick="change()">3D Product</a></li>
+        <li style="float:right"><a href="#logout">Logout</a></li>
+    </ul>
+    <div class="row">
+        <div class="column left" style="background-color: #333;">
+            <ul>
+                <div class="dropdown">
+                    <button class="dropdown-btn">About YuMi
+                        <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                        <a href="#" onclick="change1()">Photo Gallery</a>
+                        <a href="#">Video Gallery</a>
+                    </div>
+                </div>
+                <li><a href="#" onclick="change2()">Technical Data</a></li>
+                <li><a href="#">Case Studies</a></li>
+                <li><a href="#">Presentation</a></li>
+                <li><a href="#" style="position:static;">Q & A</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+        </div>
+        <div class="colume middle" style="background-color: rgb(136, 33, 33);">
+            <div id="changing_img"><img src="/d34r3885.jpg" height="600" width="800"></img></div>
+        </div>
+
+        <div class="column right" style="background-color: #333">
+            <div class="webshop">Configure your own YuMi
+                <button class="button" style="box-shadow: 4px 5px 5px rgb(116, 27, 27)">
+                    <a href="https://webshop.robotics.abb.com/se/" style="color: #333;">
+                        Click here
+                    </a>
+                    
+                </button>
+            </div>
+            <div class="tutorial">Tutorial register
+                <button class="button" style="box-shadow: 4px 5px 5px rgb(116, 27, 27)">Click here</button>
+            </div>
+            <div class="news">News letter
+                <button class="button" style="box-shadow: 4px 5px 5px rgb(116, 27, 27)">Click here</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <img src="/footers.jpg" width="200px" height="100px"></img>
+        <h1>Copy Right: Tian Yao</h1>
+    </div>
+
+
+</body>
+
+</html>

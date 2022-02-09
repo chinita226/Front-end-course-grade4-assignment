@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Task2_2_1Col.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    
+    <title>ABB YuMi</title>
+</head>
+
+<body>
+    <ul class="nav__menu">
+        <li><a href="#home">Home</a></li>
+        <div class="dropdown">
+            <button class="dropdown-btn">About YuMi
+                <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-container">
+                <a href="#" onclick="change1()">Photo Gallery</a>
+                <a href="#">Video Gallery</a>
+                <a href="#3d" onclick="change()">3D Product</a>
+            </div>
+        </div>
+        <li style="float:right"><a href="#logout">Logout</a></li>
+    </ul>
+
+    <div class="carousel">
+        <div class="carousel__track-container">
+            <ul class="carousel__track">
+                <li class="carousel__slide current-slide">
+                    <img class="carousel__image" src="/d34r3885.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <img src="/footers.jpg" width="200px" height="100px"></img>
+        <h1>Copy Right: Tian Yao</h1>
+    </div>
+
+</body>
+
+</html>

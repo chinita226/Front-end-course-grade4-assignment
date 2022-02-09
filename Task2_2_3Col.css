@@ -1,0 +1,165 @@
+/* Create three unequal columns that floats next to each other */
+* {
+    box-sizing: border-box;
+    
+}
+
+model-viewer {
+    height: 600px;
+    width: 800px;
+    top: 0;
+    left: 0;
+    border: none;
+}
+
+.column {
+    float: left;
+    padding: 20px;
+    position: relative;
+/* Should be removed. Only for demonstration */
+    
+}
+
+.left {
+    float: left;
+    width: 15%;
+    height: 600px;
+}
+
+.middle {
+    width: 60%;
+    padding: 0%;
+    height: 600px;
+    margin:0 auto;  
+    display: inline-block;
+    
+}
+  
+.right {
+    float: right;
+    width: 25%;
+    padding: 0%;
+    height: 600px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.webshop, .tutorial, .news {
+    background-color: lightgrey;
+    height: 150px;
+    width:auto;
+    border: 1px solid rgb(246, 248, 246);
+    padding: 50px;
+    margin: 20px;
+}
+
+.dropdown-btn {
+    background-color: #aab1ae;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.dropdown {
+    position:relative;
+    display: inline-block;
+  }
+
+.dropdown-container {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-container a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+  /* Optional: Style the caret down icon */
+
+  
+.dropdown-container a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-container {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #5f615f;}
+
+
+.button {
+    width: 200px;
+    height: 30px;
+    border-radius: 12px;
+    background-color: #a83c2e; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+
+body {
+    margin: 0;
+    font-family: 'open sans condensed', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+h1 {
+    font-family: 'Amatica SC', cursive;
+    font-size: medium;
+    display: inline-flex;
+    padding-top: 10px;
+    font-weight: 400;
+}
+
+.active {
+    background-color: #565858;
+}
+
+.footer {
+    position: relative;
+    background-color:white;
+    height: 150px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
